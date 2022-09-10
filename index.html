@@ -15,15 +15,13 @@
 
 <body>
   <script>
-    vex.defaultOptions.className = 'vex-theme-os'
-    
     function fetch() {
-      vex.dialog.alert("(v1.2) Error: Function is still under development")
+      vex.dialog.alert(document.getElementById(username))
     }
   </script>
   <center>
      <br>
-     <input class="pure-form" placeholder="Twitter Username" />
+     <input id="username" class="pure-form" placeholder="Twitter Username" />
      <button onclick="fetch()" class="pure-button pure-button-primary">Fetch</button>
   </center>
 </body>
