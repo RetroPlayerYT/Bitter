@@ -20,7 +20,8 @@
 
       let inputValue = document.getElementById("username").value; 
       vex.dialog.alert(inputValue);
-      document.getElementById('calendar').src = loc;
+      document.getElementById('profile').href = prof;
+      prof = ("https://twitter.com" + inputValue)
     }
   </script>
   <center>
@@ -28,7 +29,7 @@
      <input id="username" class="pure-form" placeholder="Twitter Username" />
      <button onclick="fetch()" class="pure-button pure-button-primary">Fetch</button>
      <br><br>
-     <a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Loading...</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     <a id="profile" class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Loading...</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </center>
 </body>
 
